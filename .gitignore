@@ -1,0 +1,7 @@
+/node_modules
+/dist
+.idea
+*.iml
+*.report.txt
+*.log
+*.d.ts
