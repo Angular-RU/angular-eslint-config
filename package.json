@@ -1,6 +1,6 @@
 {
     "name": "@angular-ru/eslint-config",
-    "version": "5.0.0",
+    "version": "0.0.0",
     "description": "Shared eslint rules",
     "homepage": "https://github.com/Angular-RU/eslint-config#readme",
     "bugs": {
