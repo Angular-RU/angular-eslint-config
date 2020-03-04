@@ -4,7 +4,7 @@ import { ExecException } from 'child_process';
 import { PlainObject } from './typings';
 
 // eslint-disable-next-line @typescript-eslint/tslint/config
-const { exec, execSync } = require('child_process');
+const { exec } = require('child_process');
 // eslint-disable-next-line @typescript-eslint/tslint/config
 const { readFileSync, writeFileSync } = require('fs');
 const token: string = process.env['NPM_TOKEN']!;
@@ -31,7 +31,5 @@ exec(
 
         // eslint-disable-next-line no-magic-numbers
         writeFileSync('package.json', JSON.stringify(pkg, null, 4));
-
-        execSync('npm publish');
     }
 );

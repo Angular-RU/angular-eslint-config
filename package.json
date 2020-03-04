@@ -1,6 +1,6 @@
 {
     "name": "@angular-ru/eslint-config",
-    "version": "0.0.0",
+    "version": "5.0.0",
     "description": "Shared eslint rules",
     "homepage": "https://github.com/Angular-RU/eslint-config#readme",
     "bugs": {
@@ -15,7 +15,6 @@
     "main": "index.js",
     "scripts": {
         "format": "npx sort-package-json && prettier --write \"**/*.{js,ts,html,css,scss,md,json,yml}\"",
-        "publisher": "ts-node publisher.ts --project tsconfig.tools.json",
         "test": "sh test.sh"
     },
     "dependencies": {
