@@ -1,0 +1,14 @@
+/node_modules
+/dist
+/test
+.idea
+*.iml
+*.report.txt
+.prettierrc.json
+.travis.yml
+jest.config.json
+test.sh
+yarn.lock
+tsconfig*
+*.log
+*.d.ts

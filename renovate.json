@@ -1,0 +1,18 @@
+{
+    "rangeStrategy": "bump",
+    "separateMajorMinor": false,
+    "timezone": "UTC",
+    "automerge": true,
+    "schedule": ["after 10pm every weekday", "before 4am every weekday", "every weekend"],
+    "baseBranches": ["master"],
+    "ignoreDeps": ["typescript"],
+    "packageFiles": ["package.json"],
+    "major": {
+        "dependencies": {
+            "enabled": false
+        },
+        "devDependencies": {
+            "enabled": false
+        }
+    }
+}
