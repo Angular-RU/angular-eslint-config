@@ -19,10 +19,11 @@ exec(
             console.error(stderr);
         }
 
-        const MINOR: number = 1;
         const oldVersion: string = stdout;
-        const version: number = parseInt(stdout.split('.')[MINOR]);
-        const newVersion: string = `${version}.0.0`;
+        const version: string[] = stdout.split('.');
+        const major: number = parseInt(version[0]);
+        const minor: number = parseInt(version[1]) + 1;
+        const newVersion: string = `${major}.${minor}.0`;
 
         console.log(`\nPrev "@angular-ru/eslint-config" version: ${oldVersion}`);
         console.log(`New "@angular-ru/eslint-config" version: ${newVersion}\n`);
