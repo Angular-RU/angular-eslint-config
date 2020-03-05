@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import { ExecException } from 'child_process';
 
-import { PlainObject } from './typings';
+import { PlainObject } from '../typings';
 
 // eslint-disable-next-line @typescript-eslint/tslint/config
 const { exec } = require('child_process');
@@ -20,8 +20,10 @@ exec(
         }
 
         const oldVersion: string = stdout;
-        const version: number = parseInt(stdout.split('.')[0]) + 1;
-        const newVersion: string = `${version}.0.0`;
+        const version: string[] = stdout.split('.');
+        const major: number = parseInt(version[0]);
+        const minor: number = parseInt(version[1]) + 1;
+        const newVersion: string = `${major}.${minor}.0`;
 
         console.log(`\nPrev "@angular-ru/eslint-config" version: ${oldVersion}`);
         console.log(`New "@angular-ru/eslint-config" version: ${newVersion}\n`);
