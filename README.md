@@ -1,5 +1,17 @@
 # Shareable Configs for Angular projects
 
+<p align="center">
+  <a href="https://travis-ci.org/angular-ru/eslint-config">
+    <img src="https://api.travis-ci.org/Angular-RU/angular-eslint-config.svg?branch=master" />
+  </a>
+  <a href="https://badge.fury.io/js/%40angular-ru%2Feslint-config">
+    <img src="https://badge.fury.io/js/%40angular-ru%2Feslint-config.svg" />
+  </a>
+  <a href="https://npm-stat.com/charts.html?package=%40angular-ru%2Feslint-config&from=2019-09-01">
+    <img src="https://img.shields.io/npm/dt/@angular-ru/eslint-config.svg" />
+  </a>
+</p>
+
 These rules are the most stringent, which allow you to control all types of data in your project, as well as more
 strictly determine the order of imports.
 
