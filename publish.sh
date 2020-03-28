@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "Commit: $TRAVIS_COMMIT";
 echo "Commit message: $TRAVIS_COMMIT_MESSAGE";
 
 if [[ $TRAVIS_COMMIT_MESSAGE == *"only dependencies"* ||  $TRAVIS_COMMIT_MESSAGE == *"trigger publish"* ]]; then
