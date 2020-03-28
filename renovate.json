@@ -2,19 +2,24 @@
     "automerge": true,
     "rangeStrategy": "bump",
     "packageFiles": ["package.json"],
-    "groupName": "all dependencies",
     "separateMajorMinor": false,
-    "groupSlug": "all",
     "major": {
         "dependencies": { "enabled": false },
         "devDependencies": { "enabled": false }
     },
     "packageRules": [
         {
-            "packagePatterns": ["*"],
-            "excludePackagePatterns": ["^@angular/", "^@angular-devkit/"],
-            "groupName": "all dependencies",
-            "groupSlug": "all-dependencies"
+            "depTypeList": ["dependencies"],
+            "groupName": "dependencies",
+            "groupSlug": "dependencies",
+            "commitMessageTopic": "dependencies",
+            "commitBody": "dependencies"
+        },
+        {
+            "depTypeList": ["devDependencies"],
+            "groupName": "dev dependencies",
+            "commitMessageTopic": "dev dependencies",
+            "groupSlug": "dev dependencies"
         }
     ]
 }
