@@ -1,6 +1,6 @@
 # Shareable Configs for Angular projects
 
-<p align="center">
+<p>
   <a href="https://travis-ci.org/angular-ru/eslint-config">
     <img src="https://api.travis-ci.org/Angular-RU/angular-eslint-config.svg?branch=master" />
   </a>
