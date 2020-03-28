@@ -14,4 +14,4 @@ script:
     - yarn test
 
 after_success:
-    - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && chmod +x publish.sh && sh publish.sh
+    - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && chmod +x publish.sh && ./publish.sh
