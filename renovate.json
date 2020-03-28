@@ -12,14 +12,15 @@
             "depTypeList": ["dependencies"],
             "groupName": "dependencies",
             "groupSlug": "dependencies",
-            "commitMessageTopic": "dependencies",
-            "commitBody": "dependencies"
+            "commitMessageTopic": "only dependencies",
+            "commitBody": "only dependencies"
         },
         {
             "depTypeList": ["devDependencies"],
-            "groupName": "dev dependencies",
-            "commitMessageTopic": "dev dependencies",
-            "groupSlug": "dev dependencies"
+            "groupName": "devDependencies",
+            "groupSlug": "devDependencies",
+            "commitMessageTopic": "only devDependencies",
+            "commitBody": "only devDependencies"
         }
     ]
 }
