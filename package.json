@@ -44,7 +44,7 @@
         "@types/jest": "25.2.1",
         "@types/node": "13.13.0",
         "eslint": "6.8.0",
-        "jest": "25.3.0",
+        "jest": "25.4.0",
         "npx": "10.2.2",
         "prettier": "2.0.4",
         "sort-package-json": "1.42.0",
