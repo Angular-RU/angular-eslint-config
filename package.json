@@ -42,7 +42,7 @@
         "@angular/compiler": "8.2.14",
         "@angular/core": "8.2.14",
         "@types/jest": "25.2.1",
-        "@types/node": "13.13.2",
+        "@types/node": "13.13.3",
         "eslint": "6.8.0",
         "jest": "25.4.0",
         "npx": "10.2.2",
