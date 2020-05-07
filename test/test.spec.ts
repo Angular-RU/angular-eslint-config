@@ -13,6 +13,7 @@ describe('[TEST]: Eslint', (): void => {
         expect(bad.includes("expected member-variable-declaration: 'hello' to have a typedef")).toEqual(true);
         expect(bad.includes('Missing accessibility modifier on class property hello')).toEqual(true);
         expect(bad.includes('Unexpected console statement')).toEqual(true);
+        expect(bad.includes('No magic number: 2')).toEqual(true);
     });
 
     it('check success files', (): void => {
