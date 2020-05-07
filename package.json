@@ -17,7 +17,7 @@
     },
     "license": "MIT",
     "author": "splincode",
-    "main": "eslintrc.js",
+    "main": "index.js",
     "scripts": {
         "format": "npx sort-package-json && prettier --write \"**/*.{js,ts,html,css,scss,md,json,yml}\"",
         "test": "sh test.sh"
