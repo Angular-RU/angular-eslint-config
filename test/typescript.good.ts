@@ -26,3 +26,7 @@ console.error({
     a: `Hello 'world'`,
     b: HelloWorld.World
 });
+
+console.error(-1);
+console.error(0);
+console.error(1);

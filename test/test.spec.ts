@@ -11,6 +11,8 @@ describe('[TEST]: Eslint', (): void => {
         expect(bad.includes('Missing accessibility modifier on class property hello')).toEqual(true);
         expect(bad.includes('Unexpected console statement')).toEqual(true);
         expect(bad.includes('No magic number: 2')).toEqual(true);
+        expect(bad.includes('No magic number: 5')).toEqual(true);
+        expect(bad.includes('No magic number: 10')).toEqual(true);
     });
 
     it('check success files', (): void => {

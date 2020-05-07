@@ -29,3 +29,5 @@ function helloWorldNamed(): string {
 }
 
 helloWorldNamed();
+
+console.error(5 * 10);

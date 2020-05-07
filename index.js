@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
  * @type {import('eslint').Linter.Config}
  */
@@ -68,6 +69,7 @@ module.exports = {
         '@typescript-eslint/no-magic-numbers': [
             'error',
             {
+                ignore: [-1, 0, 1],
                 ignoreEnums: true,
                 ignoreNumericLiteralTypes: true,
                 ignoreReadonlyClassProperties: true
