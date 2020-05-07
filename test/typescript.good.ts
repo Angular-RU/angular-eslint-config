@@ -8,7 +8,7 @@ export class A {
 console.error(new A().hi);
 console.error(new A().hello);
 
-enum foo {
+export enum foo {
     SECOND = 1000,
     VALUE_1 = 3,
     VALUE_2 = 4
@@ -17,3 +17,12 @@ enum foo {
 console.error(foo.SECOND);
 console.error(foo.VALUE_1);
 console.error(foo.VALUE_2);
+
+export const enum HelloWorld {
+    World
+}
+
+console.error({
+    a: `Hello 'world'`,
+    b: HelloWorld.World
+});

@@ -1,4 +1,6 @@
-/* eslint-disable no-magic-numbers */
+/**
+ * @type {import('eslint').Linter.Config}
+ */
 module.exports = {
     env: {
         browser: true,
@@ -7,9 +9,27 @@ module.exports = {
     },
     parser: '@typescript-eslint/parser',
     parserOptions: {
+        createDefaultProgram: true,
         project: './tsconfig.json',
-        sourceType: 'module'
+        sourceType: 'module',
+        errorOnUnknownASTType: true,
+        errorOnTypeScriptSyntacticAndSemanticIssues: true
     },
+    ignorePatterns: [
+        '**/node_modules/**',
+        '**/schematics/*',
+        '**/coverage/**',
+        'eslintrc.js',
+        '.eslintrc.js',
+        '**/*.spec.ts',
+        '**/*-spec.ts',
+        '**/*.lint.ts',
+        '**/dist/**',
+        '**/docs/**',
+        '.cache/**',
+        '.git/**',
+        '.idea/**'
+    ],
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/eslint-recommended',
@@ -44,14 +64,15 @@ module.exports = {
         'no-return-assign': ['error', 'always'],
         'max-params': ['error', 3],
         'no-nested-ternary': 'error',
-        "no-magic-numbers": "off",
-        "@typescript-eslint/no-magic-numbers": [
-            "error",
+        'no-magic-numbers': 'off',
+        '@typescript-eslint/no-magic-numbers': [
+            'error',
             {
                 ignoreEnums: true,
                 ignoreNumericLiteralTypes: true,
                 ignoreReadonlyClassProperties: true
-            }],
+            }
+        ],
         'sort-imports': 'off',
         'prettier/prettier': 'error',
         'import/first': 'error',
@@ -137,7 +158,8 @@ module.exports = {
         '@typescript-eslint/no-use-before-define': ['error', { functions: false, classes: false, variables: true }],
         'no-prototype-builtins': 'off',
         'no-useless-escape': 'off',
-        quotes: ['error', 'single', { allowTemplateLiterals: true }],
+        quotes: 'off',
+        '@typescript-eslint/quotes': ['error', 'single', { allowTemplateLiterals: true }],
         'arrow-body-style': 'error',
         'arrow-parens': ['error', 'always'],
         'constructor-super': 'error',
