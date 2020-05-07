@@ -44,7 +44,14 @@ module.exports = {
         'no-return-assign': ['error', 'always'],
         'max-params': ['error', 3],
         'no-nested-ternary': 'error',
-        'no-magic-numbers': ['error', { ignore: [-1, 0, 1] }],
+        "no-magic-numbers": "off",
+        "@typescript-eslint/no-magic-numbers": [
+            "error",
+            {
+                ignoreEnums: true,
+                ignoreNumericLiteralTypes: true,
+                ignoreReadonlyClassProperties: true
+            }],
         'sort-imports': 'off',
         'prettier/prettier': 'error',
         'import/first': 'error',
