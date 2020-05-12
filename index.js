@@ -43,7 +43,8 @@ module.exports = {
         '@typescript-eslint/tslint',
         'prettier',
         'simple-import-sort',
-        'eslint-plugin-no-cyrillic-string'
+        'eslint-plugin-no-cyrillic-string',
+        'interfaced'
     ],
     rules: {
         indent: 'off',
@@ -217,6 +218,7 @@ module.exports = {
         'space-before-function-paren': ['error', { anonymous: 'always', named: 'never' }],
         'use-isnan': 'error',
         'valid-typeof': 'off',
+        'interfaced/abstract-class-name-prefix': 'error',
         '@typescript-eslint/tslint/config': [
             'error',
             {
