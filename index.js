@@ -43,8 +43,7 @@ module.exports = {
         '@typescript-eslint/tslint',
         'prettier',
         'simple-import-sort',
-        'eslint-plugin-no-cyrillic-string',
-        'interfaced'
+        'eslint-plugin-no-cyrillic-string'
     ],
     rules: {
         indent: 'off',
@@ -100,6 +99,15 @@ module.exports = {
                 args: 'after-used',
                 ignoreRestSiblings: false,
                 argsIgnorePattern: '^_'
+            }
+        ],
+        '@typescript-eslint/naming-convention': [
+            'error',
+            {
+                'selector': 'class',
+                'modifiers': ['abstract'],
+                "format": ["PascalCase"],
+                'prefix': ['Abstract']
             }
         ],
         '@typescript-eslint/interface-name-prefix': 'off',
@@ -218,7 +226,6 @@ module.exports = {
         'space-before-function-paren': ['error', { anonymous: 'always', named: 'never' }],
         'use-isnan': 'error',
         'valid-typeof': 'off',
-        'interfaced/abstract-class-name-prefix': 'error',
         '@typescript-eslint/tslint/config': [
             'error',
             {

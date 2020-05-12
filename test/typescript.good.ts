@@ -30,3 +30,7 @@ console.error({
 console.error(-1);
 console.error(0);
 console.error(1);
+
+export abstract class AbstractTest {}
+
+console.error(AbstractTest);
