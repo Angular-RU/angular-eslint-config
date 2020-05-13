@@ -13,6 +13,7 @@ describe('[TEST]: Eslint', (): void => {
         expect(bad.includes('No magic number: 2')).toEqual(true);
         expect(bad.includes('No magic number: 5')).toEqual(true);
         expect(bad.includes('No magic number: 10')).toEqual(true);
+        expect(bad.includes('Class name TestClass must have one of the following prefixes: Abstract')).toEqual(true);
     });
 
     it('check success files', (): void => {
