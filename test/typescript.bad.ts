@@ -31,3 +31,7 @@ function helloWorldNamed(): string {
 helloWorldNamed();
 
 console.error(5 * 10);
+
+// expect errors
+export abstract class TestClass {}
+console.log(TestClass);

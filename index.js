@@ -101,6 +101,15 @@ module.exports = {
                 argsIgnorePattern: '^_'
             }
         ],
+        '@typescript-eslint/naming-convention': [
+            'error',
+            {
+                'selector': 'class',
+                'modifiers': ['abstract'],
+                "format": ["PascalCase"],
+                'prefix': ['Abstract']
+            }
+        ],
         '@typescript-eslint/interface-name-prefix': 'off',
         '@typescript-eslint/member-ordering': [
             'error',
