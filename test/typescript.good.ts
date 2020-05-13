@@ -31,6 +31,8 @@ console.error(-1);
 console.error(0);
 console.error(1);
 
-export abstract class AbstractTest {}
+export abstract class AbstractTest {
+    public static hello: string = 'Hello';
+}
 
-console.error(AbstractTest);
+console.error(AbstractTest.hello);
