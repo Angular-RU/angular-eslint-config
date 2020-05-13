@@ -21,6 +21,8 @@ strictly determine the order of imports.
 $ npm install @angular-ru/eslint-config -D
 ```
 
+Also you do not need to manually install ESLint, it will always be the newest.
+
 Add to your `.eslintrc.json`:
 
 ```json
