@@ -69,7 +69,6 @@ module.exports = {
         'no-return-assign': ['error', 'always'],
         'max-params': ['error', 3],
         'no-nested-ternary': 'error',
-        'import/no-deprecated': 'error',
         'no-magic-numbers': 'off',
         '@typescript-eslint/no-magic-numbers': [
             'error',

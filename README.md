@@ -39,13 +39,26 @@ $ eslint "**/*.ts"
 
 ### Override rules
 
-`.eslintrc.json`:
+`.eslintrc.json` or `.eslintrc.js`:
 
 ```json5
 {
     extends: '@angular-ru/eslint-config',
     rules: {
         // override extended rules
+    }
+}
+```
+
+### Optional
+
+### import/no-deprecated by default "off"
+
+```json
+{
+    "extends": "@angular-ru/eslint-config",
+    "rules": {
+        "import/no-deprecated": "error"
     }
 }
 ```
