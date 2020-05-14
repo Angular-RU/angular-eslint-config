@@ -1,3 +1,6 @@
+import { A1 } from './module/a1';
+import { B1 } from './module/b1';
+
 type SmallPrimes = 2 | 3 | 5 | 7 | 11;
 
 export class A {
@@ -36,3 +39,6 @@ export abstract class AbstractTest {
 }
 
 console.error(AbstractTest.hello);
+
+console.warn(A1);
+console.warn(B1);

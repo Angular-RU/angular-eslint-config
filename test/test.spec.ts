@@ -7,6 +7,7 @@ describe('[TEST]: Eslint', (): void => {
 
     it('check failed files', (): void => {
         const bad: string = ensureDistFile('bad');
+        expect(bad.includes(`Run autofix to sort these imports!`)).toEqual(true);
         expect(bad.includes(`expected member-variable-declaration: 'hello' to have a typedef`)).toEqual(true);
         expect(bad.includes('Missing accessibility modifier on class property hello')).toEqual(true);
         expect(bad.includes('Unexpected console statement')).toEqual(true);

@@ -1,3 +1,7 @@
+// expect errors
+import { B1 } from './module/b1';
+import { A1 } from './module/a1';
+
 export class A {
     // expect errors
     public hi: number = 2;
@@ -42,3 +46,6 @@ export abstract class TestClass {}
 
 // expect errors
 console.log(TestClass);
+
+console.warn(A1);
+console.warn(B1);
