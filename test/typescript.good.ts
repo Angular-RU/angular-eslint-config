@@ -41,4 +41,4 @@ export abstract class AbstractTest {
 console.error(AbstractTest.hello);
 
 console.warn(A1);
-console.warn(B1);
+console.warn(new B1().hello('hello'));

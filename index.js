@@ -8,6 +8,10 @@ module.exports = {
         es6: true,
         node: true
     },
+    settings: {
+        'import/parsers': { '@typescript-eslint/parser': ['.ts'] },
+        'import/resolver': { 'eslint-import-resolver-typescript': true }
+    },
     parser: '@typescript-eslint/parser',
     parserOptions: {
         createDefaultProgram: true,
@@ -65,6 +69,7 @@ module.exports = {
         'no-return-assign': ['error', 'always'],
         'max-params': ['error', 3],
         'no-nested-ternary': 'error',
+        'import/no-deprecated': 'error',
         'no-magic-numbers': 'off',
         '@typescript-eslint/no-magic-numbers': [
             'error',
